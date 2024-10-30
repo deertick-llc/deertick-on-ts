@@ -1,3 +1,6 @@
 [submodule "conf"]
 	path = conf
 	url = git@github.com:prototype99/deertick-conf.git
+[submodule "aider"]
+	path = aider
+	url = git@github.com:antra-tess/aider.git
