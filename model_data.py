@@ -313,7 +313,7 @@ def list_models():
     """
     print("\nmodels:\n")
     for model_row in models:
-        print(f'"{model_row[ModelHead.name.value]}": "{model_row[ModelHead.id.value]}",')
+        print(f'{"{"}\nid: "{model_row[ModelHead.id.value]}",\nname: "{model_row[ModelHead.name.value]}",\ncreated: {model_row[ModelHead.created.value]},\ndescription: "{model_row[ModelHead.description.value]}",\ncontextLength: {model_row[ModelHead.context_length.value]},\nrequestLimits: {model_row[ModelHead.request_limits.value]},\nmodality: "{model_row[ModelHead.modality.value]}",\ntokenizer: "{model_row[ModelHead.tokenizer.value]}",\ninstructType: "{model_row[ModelHead.instruct_type.value]}",\ncostPrompt: {model_row[ModelHead.cost_prompt.value]},\ncostCompletion: {model_row[ModelHead.cost_completion.value]},\ncostImage: {model_row[ModelHead.cost_image.value]},\ncostRequest: {model_row[ModelHead.cost_request.value]},\ncontextLengthTopProvider: {model_row[ModelHead.context_length_top_provider.value]},\nmaxCompletionTokensTopProvider: {model_row[ModelHead.max_completion_tokens_top_provider.value]},\nisModerated: {model_row[ModelHead.is_moderated.value]},\npreferredProvider: "{model_row[ModelHead.preferred_provider.value]}",\ntype: "{model_row[ModelHead.type.value]}",incompatible: {model_row[ModelHead.incompatible.value]},\n{"}"},')
 
 def list_all():
     """
